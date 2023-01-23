@@ -2,7 +2,6 @@ import { AuthenticatedRequest } from "@/middlewares";
 import enrollmentsService from "@/services/enrollments-service";
 import { Response } from "express";
 import httpStatus from "http-status";
-import { createEnrollmentSchema } from "@/schemas";
 
 export async function getEnrollmentByUser(req: AuthenticatedRequest, res: Response) {
   const { userId } = req;
